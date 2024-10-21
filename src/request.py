@@ -1,5 +1,5 @@
 from src.helpers import *
-from src.data import PAS, LOG_EMAIL, USERNAME
+from src.data import PAS, LOG_EMAIL, REG_PASSWORD
 
 def gen_new_user():
     new_user = {
@@ -24,3 +24,17 @@ def gen_user_whithout_email():
         "name": random_reg_username()
     }
     return brok_user
+
+def log_user():
+    login_exist_user = {
+        "email": LOG_EMAIL,
+        "password": PAS
+        }
+    return login_exist_user
+
+def false_user():
+    login_unexist_user = {
+        "email": random_reg_email(),
+        "password": REG_PASSWORD
+        }
+    return login_unexist_user
