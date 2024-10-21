@@ -1,0 +1,5 @@
+USERNAME = f'eldar_dikopp_10_012'
+LOG_EMAIL = f'{USERNAME}@yandex.ru'
+PAS = f'123456789'
+REG_PASSWORD = f'123321'
+REG_PASSWORD_ERROR = f'123'
