@@ -6,7 +6,7 @@ def gen_new_user():
         "email": random_reg_email(),
         "password": PAS,
         "name": random_reg_username()
-    }
+        }
     return new_user
 
 def gen_reg_user():
@@ -14,7 +14,7 @@ def gen_reg_user():
         "email": LOG_EMAIL,
         "password": PAS,
         "name": random_reg_username()
-    }
+        }
     return reg_user
 
 def gen_user_whithout_email():
@@ -22,7 +22,7 @@ def gen_user_whithout_email():
         "email": '',
         "password": PAS,
         "name": random_reg_username()
-    }
+        }
     return brok_user
 
 def log_user():
@@ -38,3 +38,10 @@ def false_user():
         "password": REG_PASSWORD
         }
     return login_unexist_user
+
+def update_user():
+    update_user_data = {
+        "email": random_reg_email(),
+        "name": random_reg_username()
+        }
+    return update_user_data
