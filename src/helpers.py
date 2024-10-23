@@ -9,3 +9,21 @@ def random_reg_email():
 
 def random_reg_pass():
     return f'{random.randint(100000, 999999)}'
+
+def order_data():
+    ingridients = {
+                "ingredients": ["61c0c5a71d1f82001bdaaa70"]
+                }
+    return ingridients
+
+def order_data_empty():
+    ingridients = {
+                "ingredients": []
+                }
+    return ingridients
+
+def order_data_false():
+    ingridients = {
+                "ingredients": ["3"]
+                }
+    return ingridients

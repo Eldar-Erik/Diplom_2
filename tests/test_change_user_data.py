@@ -8,7 +8,7 @@ class TestChangeUserData:
 
     @allure.title('Изменение данных пользователя с авторизацией')
     def test_change_reg_user_success(self, new_user):
-        access_token = new_user["access_token"]
+        access_token = new_user
         update_data = update_user()
         response_update = requests.patch(D_USER, json=update_data, headers={"Authorization": access_token})
         assert response_update.json()["success"] == True
